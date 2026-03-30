@@ -1,0 +1,21 @@
+name: Task
+description: Add a task to the task list
+title: "[Task]: "
+type: task
+projects: ["weatherstack/2"]
+body:
+- type: markdown
+  attributes:
+    label: "Description"
+    description: "Describe the task"
+    value: "## Description"
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    label: "Acceptance Criteria"
+    description: "Specific conditions that must be met to complete the task"
+    value: "## Acceptance Criteria" |
+      "(Optional)"
+  validations:
+    required: false
